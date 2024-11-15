@@ -33,8 +33,9 @@ load_dotenv()
 
 path = '/home/freqtrade/long/user_data/logs/freqtrade.log'
 number_of_order = 5
-order_price = 50
 balance = balance_only()
+order_price = (balance / number_of_order) - (balance)
+liste_crypto = []
 
 ######################################################################################################################################
 #telegram bot
