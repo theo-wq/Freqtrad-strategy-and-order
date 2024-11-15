@@ -1,0 +1,34 @@
+{
+  "strategy_name": "leadlag",
+  "params": {
+    "roi": {
+      "30": 0.03,
+      "60": 0.02,
+      "1400": 0.015,
+      "2400": 0.007
+    },
+    "stoploss": {
+      "stoploss": -0.1
+    },
+    "trailing": {
+      "trailing_stop": false,
+      "trailing_stop_positive": null,
+      "trailing_stop_positive_offset": 0.0,
+      "trailing_only_offset_is_reached": false
+    },
+    "max_open_trades": {
+      "max_open_trades": 5
+    },
+    "buy": {
+      "buy_rsi": 31,
+      "exit_short_rsi": 42
+    },
+    "sell": {
+      "sell_rsi": 70,
+      "short_rsi": 64
+    },
+    "protection": {}
+  },
+  "ft_stratparam_v": 1,
+  "export_time": "2024-11-12 00:41:09.701862+00:00"
+}

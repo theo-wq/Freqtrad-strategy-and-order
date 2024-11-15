@@ -1,0 +1,936 @@
+2024-10-18 13:22:09,350 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-10-18 13:22:09,350 - freqtrade.configuration.configuration - INFO - Runmode set to live.
+2024-10-18 13:22:09,350 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-10-18 13:22:09,350 - freqtrade.configuration.configuration - INFO - Dry run is disabled
+2024-10-18 13:22:09,350 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-10-18 13:22:09,350 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 1 ...
+2024-10-18 13:22:09,355 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-10-18 13:22:09,355 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-10-18 13:22:09,356 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-10-18 13:22:09,362 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-10-18 13:22:09,362 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-10-18 13:22:09,373 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy leadlag_markettrend_short from '/freqtrade/user_data/strategies/leadlag_markettrend_margin.py'...
+2024-10-18 13:22:09,373 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 1.
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'2400': 0.007, '1400': 0.009, '60': 0.01, '30': 0.015}
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.06
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: True
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.01
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.02
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: True
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-10-18 13:22:09,373 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-10-18 13:22:09,374 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 1
+2024-10-18 13:22:09,374 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-10-18 13:22:09,375 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.6
+2024-10-18 13:22:09,393 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2024-10-18 13:22:12,010 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2024-10-18 13:22:12,416 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:22:12,577 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2024-10-18 13:22:12,662 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2024-10-18 13:22:12,765 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forceexit', 'forcesell', 'fx'], ['forcebuy', 'forcelong'], ['forceshort'], ['reload_trade'], ['trades'], ['delete'], ['cancel_open_order', 'coo'], ['performance'], ['buys', 'entries'], ['exits', 'sells'], ['mix_tags'], ['stats'], ['daily'], ['weekly'], ['monthly'], ['count'], ['locks'], ['delete_locks', 'unlock'], ['reload_conf', 'reload_config'], ['show_conf', 'show_config'], ['stopbuy', 'stopentry'], ['whitelist'], ['blacklist'], ['bl_delete', 'blacklist_delete'], ['logs'], ['edge'], ['health'], ['help'], ['version'], ['marketdir'], ['order'], ['list_custom_data']]
+2024-10-18 13:22:12,859 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 127.0.0.1:8080
+2024-10-18 13:22:12,859 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - No password for local REST Server defined. Please make sure that this is intentional!
+2024-10-18 13:22:12,859 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2024-10-18 13:22:12,867 - uvicorn.error - INFO - Started server process [1]
+2024-10-18 13:22:12,867 - uvicorn.error - INFO - Waiting for application startup.
+2024-10-18 13:22:12,867 - uvicorn.error - INFO - Application startup complete.
+2024-10-18 13:22:12,867 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+2024-10-18 13:22:12,885 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2024-10-18 13:22:12,922 - telegram.ext.Application - INFO - Application started
+2024-10-18 13:22:13,382 - VolumePairList - INFO - Pair BNB/USDT in your blacklist. Removing it from whitelist...
+2024-10-18 13:22:13,400 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 20 pairs: ['BTC/USDT', 'ETH/USDT', 'USDC/USDT', 'FDUSD/USDT', 'DOGE/USDT', 'SOL/USDT', 'PEPE/USDT', 'NEIRO/USDT', 'WIF/USDT', 'BOME/USDT', 'XRP/USDT', 'DIA/USDT', 'SUI/USDT', 'WLD/USDT', 'SHIB/USDT', 'TURBO/USDT', '1MBABYDOGE/USDT', 'FLOKI/USDT', 'ENA/USDT', 'LUMIA/USDT']
+2024-10-18 13:22:13,400 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2024-10-18 13:22:13,401 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_rsi = 30
+2024-10-18 13:22:13,401 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): exit_short_rsi = 30
+2024-10-18 13:22:13,401 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2024-10-18 13:22:13,401 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_rsi = 70
+2024-10-18 13:22:13,401 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): short_rsi = 70
+2024-10-18 13:22:13,401 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2024-10-18 13:22:13,401 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2024-10-18 13:22:13,401 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2024-10-18 13:22:13,401 - freqtrade.worker - INFO - Changing state to: RUNNING
+2024-10-18 13:22:13,415 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `binance`\n*Stake per trade:* `unlimited USDT`\n*Minimum ROI:* `{'2400': 0.007, '1400': 0.009, '60': 0.01, '30': 0.015}`\n*Trailing Stoploss:* `-0.06`\n*Position adjustment:* `Off`\n*Timeframe:* `5m`\n*Strategy:* `leadlag_markettrend_short`"}
+2024-10-18 13:22:13,415 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 20 volume pairs.'}]"}
+2024-10-18 13:22:13,429 - freqtrade.persistence.trade_model - INFO - Found open trade: Trade(id=9, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:19:22)
+2024-10-18 13:22:13,429 - freqtrade.freqtradebot - INFO - Updating 1 open orders.
+2024-10-18 13:22:13,664 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 5 times.
+2024-10-18 13:22:13,938 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 4 times.
+2024-10-18 13:22:14,172 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 3 times.
+2024-10-18 13:22:14,406 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 2 times.
+2024-10-18 13:22:14,654 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 1 times.
+2024-10-18 13:22:14,961 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Giving up.
+2024-10-18 13:22:14,961 - freqtrade.freqtradebot - WARNING - Error updating Order dry_run_buy_USDC/USDT_1729257561.900391 due to Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+2024-10-18 13:22:16,007 - leadlag_markettrend_margin - INFO - Envoi de la requête à l'URL : https://api.binance.com/sapi/v1/margin/allPairs?timestamp=1729257736007&signature=4e07cf9fdbc42f0b031183028d6a4d20e1d7fcd12c6cb345f74545071b6840c5
+2024-10-18 13:22:16,312 - leadlag_markettrend_margin - INFO - Code de statut de la réponse : 200
+2024-10-18 13:22:16,312 - leadlag_markettrend_margin - INFO - Contenu de la réponse : [{"id":351637150141315861,"symbol":"BNBBTC","base":"BNB","quote":"BTC","isMarginTrade":true,"isBuyAllowed":true,"isSellAllowed":true},{"id":351637923235429141,"symbol":"TRXBTC","base":"TRX","quote":"B...
+2024-10-18 13:22:16,315 - leadlag_markettrend_margin - INFO - Mise à jour des paires cross margin réussie
+2024-10-18 13:22:16,813 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 5 times.
+2024-10-18 13:22:17,046 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 4 times.
+2024-10-18 13:22:17,300 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 3 times.
+2024-10-18 13:22:17,544 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 2 times.
+2024-10-18 13:22:17,796 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 1 times.
+2024-10-18 13:22:18,046 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Giving up.
+2024-10-18 13:22:18,059 - freqtrade.freqtradebot - INFO - Cannot query order for Trade(id=9, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:19:22) due to Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 567, in fetch
+    response.raise_for_status()
+  File "/home/ftuser/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/order?timestamp=1729257736581&symbol=USDCUSDT&orderId=dry_run_buy_USDC%2FUSDT_1729257561.900391&recvWindow=10000&signature=a75d5f12ae295236af3bd8a7fcb8344edfc04ddbddadd1cad3b94b59221d5978
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1504, in fetch_order
+    order = self._api.fetch_order(order_id, pair, params=params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 5995, in fetch_order
+    response = self.privateGetOrder(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10763, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4065, in fetch2
+    raise e
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4056, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 583, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10731, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4448, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.BadRequest: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/common.py", line 181, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1519, in fetch_order
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 567, in fetch
+    response.raise_for_status()
+  File "/home/ftuser/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/order?timestamp=1729257736813&symbol=USDCUSDT&orderId=dry_run_buy_USDC%2FUSDT_1729257561.900391&recvWindow=10000&signature=fb4981d236c0c2597d5f9af11f79df8db4499569a3dfc6662a99fe94fa6a0cd1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1504, in fetch_order
+    order = self._api.fetch_order(order_id, pair, params=params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 5995, in fetch_order
+    response = self.privateGetOrder(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10763, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4065, in fetch2
+    raise e
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4056, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 583, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10731, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4448, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.BadRequest: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/common.py", line 181, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1519, in fetch_order
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 567, in fetch
+    response.raise_for_status()
+  File "/home/ftuser/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/order?timestamp=1729257737046&symbol=USDCUSDT&orderId=dry_run_buy_USDC%2FUSDT_1729257561.900391&recvWindow=10000&signature=a0ab20cc9f4e38523aeed66d12e75caaa5da1928fdce41d29c26761c125cec2f
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1504, in fetch_order
+    order = self._api.fetch_order(order_id, pair, params=params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 5995, in fetch_order
+    response = self.privateGetOrder(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10763, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4065, in fetch2
+    raise e
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4056, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 583, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10731, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4448, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.BadRequest: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/common.py", line 181, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1519, in fetch_order
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 567, in fetch
+    response.raise_for_status()
+  File "/home/ftuser/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/order?timestamp=1729257737301&symbol=USDCUSDT&orderId=dry_run_buy_USDC%2FUSDT_1729257561.900391&recvWindow=10000&signature=41269f5878c28b3ca5511ebab36ca62f3271cb0e87db5f1415a314f183fcbc74
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1504, in fetch_order
+    order = self._api.fetch_order(order_id, pair, params=params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 5995, in fetch_order
+    response = self.privateGetOrder(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10763, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4065, in fetch2
+    raise e
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4056, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 583, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10731, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4448, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.BadRequest: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/common.py", line 181, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1519, in fetch_order
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 567, in fetch
+    response.raise_for_status()
+  File "/home/ftuser/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/order?timestamp=1729257737545&symbol=USDCUSDT&orderId=dry_run_buy_USDC%2FUSDT_1729257561.900391&recvWindow=10000&signature=67951a5fd77bc55e64c971e02a52dfb50aa8b157962979970433f92ec973bcdf
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1504, in fetch_order
+    order = self._api.fetch_order(order_id, pair, params=params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 5995, in fetch_order
+    response = self.privateGetOrder(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10763, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4065, in fetch2
+    raise e
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4056, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 583, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10731, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4448, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.BadRequest: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/common.py", line 181, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1519, in fetch_order
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 567, in fetch
+    response.raise_for_status()
+  File "/home/ftuser/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/order?timestamp=1729257737797&symbol=USDCUSDT&orderId=dry_run_buy_USDC%2FUSDT_1729257561.900391&recvWindow=10000&signature=0d28711d3b2d9c22b542a704028f7c5f064e2b90cc3ecd89987ecced12afbba4
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1504, in fetch_order
+    order = self._api.fetch_order(order_id, pair, params=params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 5995, in fetch_order
+    response = self.privateGetOrder(self.extend(request, params))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10763, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4065, in fetch2
+    raise e
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4056, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 583, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/binance.py", line 10731, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+  File "/home/ftuser/.local/lib/python3.12/site-packages/ccxt/base/exchange.py", line 4448, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.BadRequest: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/freqtradebot.py", line 1547, in manage_open_orders
+    order = self.exchange.fetch_order(open_order.order_id, trade.pair)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/common.py", line 193, in wrapper
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/common.py", line 193, in wrapper
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/common.py", line 193, in wrapper
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 2 more times]
+  File "/freqtrade/freqtrade/exchange/common.py", line 196, in wrapper
+    raise ex
+  File "/freqtrade/freqtrade/exchange/common.py", line 181, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 1519, in fetch_order
+    raise TemporaryError(
+freqtrade.exceptions.TemporaryError: Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}
+
+2024-10-18 13:22:19,962 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.9', state='RUNNING'
+2024-10-18 13:22:20,287 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 5 times.
+2024-10-18 13:22:20,522 - freqtrade.exchange.common - WARNING - fetch_order() returned exception: "Could not get order due to BadRequest. Message: binance {"code":-1100,"msg":"Illegal characters found in parameter 'orderId'; legal range is '^[0-9]{1,20}$'."}". Retrying still for 4 times.
+2024-10-18 13:22:20,658 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2024-10-18 13:22:20,659 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2024-10-18 13:22:20,659 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2024-10-18 13:22:20,664 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': "1 open trades active.\n\nHandle these trades manually on Binance, or '/start' the bot again and use '/stopentry' to handle open trades gracefully. \n"}
+2024-10-18 13:22:20,664 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc modules ...
+2024-10-18 13:22:20,664 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.apiserver ...
+2024-10-18 13:22:20,664 - freqtrade.rpc.api_server.webserver - INFO - Stopping API Server
+2024-10-18 13:22:20,700 - uvicorn.error - INFO - Shutting down
+2024-10-18 13:22:20,801 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-10-18 13:22:20,801 - uvicorn.error - INFO - Application shutdown complete.
+2024-10-18 13:22:20,801 - uvicorn.error - INFO - Finished server process [1]
+2024-10-18 13:22:20,801 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.telegram ...
+2024-10-18 13:22:20,885 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-10-18 13:22:20,885 - telegram.ext.Application - INFO - Application.stop() complete
+2024-10-18 13:22:22,952 - freqtrade.exchange.exchange_ws - INFO - Resetting WS connections.
+2024-10-18 13:22:22,953 - freqtrade.exchange.exchange_ws - INFO - SOL/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,953 - freqtrade.exchange.exchange_ws - INFO - BOME/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - USDC/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - 1MBABYDOGE/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - DIA/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - FLOKI/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - BTC/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - FDUSD/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - DOGE/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - WIF/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - PEPE/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - WLD/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - SUI/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - TURBO/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - ENA/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - LUMIA/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - SHIB/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,954 - freqtrade.exchange.exchange_ws - INFO - BTC/USDT, 1d, spot - Task finished - cancelled
+2024-10-18 13:22:22,955 - freqtrade.exchange.exchange_ws - INFO - XRP/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,955 - freqtrade.exchange.exchange_ws - INFO - NEIRO/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:22,955 - freqtrade.exchange.exchange_ws - INFO - ETH/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:22:23,607 - freqtrade - INFO - SIGINT received, aborting ...
+2024-10-18 13:23:57,913 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-10-18 13:23:57,914 - freqtrade.configuration.configuration - INFO - Runmode set to live.
+2024-10-18 13:23:57,914 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-10-18 13:23:57,914 - freqtrade.configuration.configuration - INFO - Dry run is disabled
+2024-10-18 13:23:57,914 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-10-18 13:23:57,914 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 1 ...
+2024-10-18 13:23:57,920 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-10-18 13:23:57,920 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-10-18 13:23:57,921 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-10-18 13:23:57,935 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-10-18 13:23:57,935 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-10-18 13:23:57,956 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy leadlag_markettrend_short from '/freqtrade/user_data/strategies/leadlag_markettrend_margin.py'...
+2024-10-18 13:23:57,956 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 1.
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'2400': 0.007, '1400': 0.009, '60': 0.01, '30': 0.015}
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.06
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: True
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.01
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.02
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: True
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-10-18 13:23:57,957 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-10-18 13:23:57,958 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-10-18 13:23:57,958 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-10-18 13:23:57,958 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-10-18 13:23:57,958 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-10-18 13:23:57,958 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 1
+2024-10-18 13:23:57,958 - freqtrade - ERROR - Configuration error: Market exit orders require exit_pricing.price_side = "other".
+Please make sure to review the documentation at https://www.freqtrade.io/en/stable.
+2024-10-18 13:24:00,944 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-10-18 13:24:00,944 - freqtrade.configuration.configuration - INFO - Runmode set to live.
+2024-10-18 13:24:00,944 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-10-18 13:24:00,944 - freqtrade.configuration.configuration - INFO - Dry run is disabled
+2024-10-18 13:24:00,944 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-10-18 13:24:00,944 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 1 ...
+2024-10-18 13:24:00,953 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-10-18 13:24:00,953 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-10-18 13:24:00,954 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-10-18 13:24:00,960 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-10-18 13:24:00,960 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-10-18 13:24:00,971 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy leadlag_markettrend_short from '/freqtrade/user_data/strategies/leadlag_markettrend_margin.py'...
+2024-10-18 13:24:00,971 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 1.
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'2400': 0.007, '1400': 0.009, '60': 0.01, '30': 0.015}
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.06
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: True
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.01
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.02
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: True
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-10-18 13:24:00,971 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-10-18 13:24:00,972 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-10-18 13:24:00,972 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-10-18 13:24:00,972 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-10-18 13:24:00,972 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 1
+2024-10-18 13:24:00,972 - freqtrade - ERROR - Configuration error: Market exit orders require exit_pricing.price_side = "other".
+Please make sure to review the documentation at https://www.freqtrade.io/en/stable.
+2024-10-18 13:24:03,977 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-10-18 13:24:03,977 - freqtrade.configuration.configuration - INFO - Runmode set to live.
+2024-10-18 13:24:03,977 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-10-18 13:24:03,977 - freqtrade.configuration.configuration - INFO - Dry run is disabled
+2024-10-18 13:24:03,977 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-10-18 13:24:03,977 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 1 ...
+2024-10-18 13:24:03,983 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-10-18 13:24:03,984 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-10-18 13:24:03,985 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-10-18 13:24:03,998 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-10-18 13:24:03,998 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-10-18 13:24:04,013 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy leadlag_markettrend_short from '/freqtrade/user_data/strategies/leadlag_markettrend_margin.py'...
+2024-10-18 13:24:04,013 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 1.
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'2400': 0.007, '1400': 0.009, '60': 0.01, '30': 0.015}
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.06
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: True
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.01
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.02
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: True
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-10-18 13:24:04,014 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 1
+2024-10-18 13:24:04,014 - freqtrade - ERROR - Configuration error: Market exit orders require exit_pricing.price_side = "other".
+Please make sure to review the documentation at https://www.freqtrade.io/en/stable.
+2024-10-18 13:24:07,224 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-10-18 13:24:07,224 - freqtrade.configuration.configuration - INFO - Runmode set to live.
+2024-10-18 13:24:07,224 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-10-18 13:24:07,224 - freqtrade.configuration.configuration - INFO - Dry run is disabled
+2024-10-18 13:24:07,224 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-10-18 13:24:07,224 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 1 ...
+2024-10-18 13:24:07,233 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-10-18 13:24:07,233 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-10-18 13:24:07,233 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-10-18 13:24:07,239 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-10-18 13:24:07,239 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-10-18 13:24:07,250 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy leadlag_markettrend_short from '/freqtrade/user_data/strategies/leadlag_markettrend_margin.py'...
+2024-10-18 13:24:07,250 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 1.
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'2400': 0.007, '1400': 0.009, '60': 0.01, '30': 0.015}
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.06
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: True
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.01
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.02
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: True
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-10-18 13:24:07,251 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 1
+2024-10-18 13:24:07,251 - freqtrade - ERROR - Configuration error: Market exit orders require exit_pricing.price_side = "other".
+Please make sure to review the documentation at https://www.freqtrade.io/en/stable.
+2024-10-18 13:24:10,945 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-10-18 13:24:10,945 - freqtrade.configuration.configuration - INFO - Runmode set to live.
+2024-10-18 13:24:10,945 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-10-18 13:24:10,945 - freqtrade.configuration.configuration - INFO - Dry run is disabled
+2024-10-18 13:24:10,945 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-10-18 13:24:10,945 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 1 ...
+2024-10-18 13:24:10,951 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-10-18 13:24:10,951 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-10-18 13:24:10,952 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-10-18 13:24:10,967 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-10-18 13:24:10,967 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-10-18 13:24:10,984 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy leadlag_markettrend_short from '/freqtrade/user_data/strategies/leadlag_markettrend_margin.py'...
+2024-10-18 13:24:10,984 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-10-18 13:24:10,984 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 1.
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'2400': 0.007, '1400': 0.009, '60': 0.01, '30': 0.015}
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.06
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: True
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.01
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.02
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: True
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-10-18 13:24:10,985 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-10-18 13:24:10,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-10-18 13:24:10,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-10-18 13:24:10,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-10-18 13:24:10,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-10-18 13:24:10,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-10-18 13:24:10,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-10-18 13:24:10,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-10-18 13:24:10,986 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 1
+2024-10-18 13:24:10,986 - freqtrade - ERROR - Configuration error: Market exit orders require exit_pricing.price_side = "other".
+Please make sure to review the documentation at https://www.freqtrade.io/en/stable.
+2024-10-18 13:25:59,244 - freqtrade.loggers - INFO - Verbosity set to 0
+2024-10-18 13:25:59,244 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2024-10-18 13:25:59,244 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2024-10-18 13:25:59,244 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2024-10-18 13:25:59,244 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2024-10-18 13:25:59,244 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 6 ...
+2024-10-18 13:25:59,251 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2024-10-18 13:25:59,252 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2024-10-18 13:25:59,252 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2024-10-18 13:25:59,258 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2024-10-18 13:25:59,258 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2024-10-18 13:25:59,269 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy leadlag_markettrend_short from '/freqtrade/user_data/strategies/leadlag_markettrend_margin.py'...
+2024-10-18 13:25:59,269 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2024-10-18 13:25:59,269 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USDT.
+2024-10-18 13:25:59,269 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: unlimited.
+2024-10-18 13:25:59,269 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}.
+2024-10-18 13:25:59,269 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'max_open_trades' with value in config file: 6.
+2024-10-18 13:25:59,269 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'2400': 0.007, '1400': 0.009, '60': 0.01, '30': 0.015}
+2024-10-18 13:25:59,269 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2024-10-18 13:25:59,269 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.06
+2024-10-18 13:25:59,269 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: True
+2024-10-18 13:25:59,269 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive: 0.01
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.02
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: True
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: True
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'entry': 'limit', 'exit': 'market', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'entry': 'GTC', 'exit': 'GTC'}
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USDT
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: unlimited
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 200
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'entry': 10, 'exit': 10, 'exit_timeout_count': 0, 'unit': 'minutes'}
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_exit_signal: True
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_only: False
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_entry_signal: False
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using exit_profit_offset: 0.0
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using position_adjustment_enable: False
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_entry_position_adjustment: -1
+2024-10-18 13:25:59,270 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using max_open_trades: 6
+2024-10-18 13:25:59,270 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2024-10-18 13:25:59,271 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2024-10-18 13:25:59,272 - freqtrade.exchange.exchange - INFO - Using CCXT 4.4.6
+2024-10-18 13:25:59,289 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2024-10-18 13:26:01,293 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2024-10-18 13:26:01,314 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:01,484 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.telegram ...
+2024-10-18 13:26:01,570 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2024-10-18 13:26:01,639 - freqtrade.rpc.telegram - INFO - rpc.telegram is listening for following commands: [['status'], ['profit'], ['balance'], ['start'], ['stop'], ['forceexit', 'forcesell', 'fx'], ['forcebuy', 'forcelong'], ['forceshort'], ['reload_trade'], ['trades'], ['delete'], ['cancel_open_order', 'coo'], ['performance'], ['buys', 'entries'], ['exits', 'sells'], ['mix_tags'], ['stats'], ['daily'], ['weekly'], ['monthly'], ['count'], ['locks'], ['delete_locks', 'unlock'], ['reload_conf', 'reload_config'], ['show_conf', 'show_config'], ['stopbuy', 'stopentry'], ['whitelist'], ['blacklist'], ['bl_delete', 'blacklist_delete'], ['logs'], ['edge'], ['health'], ['help'], ['version'], ['marketdir'], ['order'], ['list_custom_data']]
+2024-10-18 13:26:01,738 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 127.0.0.1:8080
+2024-10-18 13:26:01,738 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - No password for local REST Server defined. Please make sure that this is intentional!
+2024-10-18 13:26:01,738 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2024-10-18 13:26:01,745 - uvicorn.error - INFO - Started server process [1]
+2024-10-18 13:26:01,745 - uvicorn.error - INFO - Waiting for application startup.
+2024-10-18 13:26:01,746 - uvicorn.error - INFO - Application startup complete.
+2024-10-18 13:26:01,746 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8080 (Press CTRL+C to quit)
+2024-10-18 13:26:01,755 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist VolumePairList from '/freqtrade/freqtrade/plugins/pairlist/VolumePairList.py'...
+2024-10-18 13:26:01,822 - telegram.ext.Application - INFO - Application started
+2024-10-18 13:26:02,203 - VolumePairList - INFO - Pair BNB/USDT in your blacklist. Removing it from whitelist...
+2024-10-18 13:26:02,221 - freqtrade.plugins.pairlistmanager - INFO - Whitelist with 20 pairs: ['BTC/USDT', 'ETH/USDT', 'USDC/USDT', 'FDUSD/USDT', 'DOGE/USDT', 'SOL/USDT', 'PEPE/USDT', 'NEIRO/USDT', 'WIF/USDT', 'BOME/USDT', 'XRP/USDT', 'DIA/USDT', 'SUI/USDT', 'WLD/USDT', 'SHIB/USDT', 'TURBO/USDT', '1MBABYDOGE/USDT', 'FLOKI/USDT', 'ENA/USDT', 'LUMIA/USDT']
+2024-10-18 13:26:02,222 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2024-10-18 13:26:02,222 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_rsi = 30
+2024-10-18 13:26:02,222 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): exit_short_rsi = 30
+2024-10-18 13:26:02,222 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2024-10-18 13:26:02,222 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_rsi = 70
+2024-10-18 13:26:02,222 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): short_rsi = 70
+2024-10-18 13:26:02,222 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2024-10-18 13:26:02,222 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2024-10-18 13:26:02,222 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2024-10-18 13:26:02,222 - freqtrade.worker - INFO - Changing state to: RUNNING
+2024-10-18 13:26:02,234 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2024-10-18 13:26:02,234 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `binance`\n*Stake per trade:* `unlimited USDT`\n*Minimum ROI:* `{'2400': 0.007, '1400': 0.009, '60': 0.01, '30': 0.015}`\n*Trailing Stoploss:* `-0.06`\n*Position adjustment:* `Off`\n*Timeframe:* `5m`\n*Strategy:* `leadlag_markettrend_short`"}
+2024-10-18 13:26:02,236 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USDT pairs to buy and sell based on [{'VolumePairList': 'VolumePairList - top 20 volume pairs.'}]"}
+2024-10-18 13:26:02,238 - freqtrade.persistence.trade_model - INFO - Found open trade: Trade(id=9, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:19:22)
+2024-10-18 13:26:03,867 - leadlag_markettrend_margin - INFO - Envoi de la requête à l'URL : https://api.binance.com/sapi/v1/margin/allPairs?timestamp=1729257963867&signature=f90e6f63fcc2b7d0d5f7c5b097f2248bddb0244cf05da2c316408188376d6e7b
+2024-10-18 13:26:04,202 - leadlag_markettrend_margin - INFO - Code de statut de la réponse : 200
+2024-10-18 13:26:04,202 - leadlag_markettrend_margin - INFO - Contenu de la réponse : [{"id":351637150141315861,"symbol":"BNBBTC","base":"BNB","quote":"BTC","isMarginTrade":true,"isBuyAllowed":true,"isSellAllowed":true},{"id":351637923235429141,"symbol":"TRXBTC","base":"TRX","quote":"B...
+2024-10-18 13:26:04,204 - leadlag_markettrend_margin - INFO - Mise à jour des paires cross margin réussie
+2024-10-18 13:26:04,471 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=9, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:19:22)
+2024-10-18 13:26:04,730 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:04,972 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:05,214 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:05,909 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:06,157 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:06,406 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:06,660 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:07,330 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:08,003 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:08,243 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:08,484 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:08,727 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:08,968 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:09,271 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:09,577 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:09,880 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:10,119 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:10,359 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:10,599 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:10,908 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2024.9', state='RUNNING'
+2024-10-18 13:26:11,210 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=9, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:19:22)
+2024-10-18 13:26:11,464 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:11,829 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:12,495 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:12,734 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:12,973 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:13,263 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:13,575 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:13,878 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:14,187 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:14,497 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:14,738 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:14,979 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:15,219 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:15,514 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:15,754 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:16,029 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:16,340 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:16,581 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:16,847 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:17,772 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=9, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:19:22)
+2024-10-18 13:26:18,078 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:18,325 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:18,589 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:18,828 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:19,100 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:19,340 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:19,612 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:19,853 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:20,124 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:20,364 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:20,637 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:20,944 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:21,184 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:21,459 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:21,699 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:22,382 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:22,687 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:22,929 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:23,200 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:23,809 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=9, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:19:22)
+2024-10-18 13:26:24,121 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:24,424 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:24,664 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:24,903 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:25,247 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:25,550 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:25,865 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:26,167 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:26,428 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:26,669 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:26,987 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:27,292 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:27,533 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:27,775 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:28,014 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:28,254 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:28,494 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:28,733 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:29,035 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:29,598 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=9, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:19:22)
+2024-10-18 13:26:29,959 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:30,267 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:30,937 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:31,178 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:31,901 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:32,572 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:32,815 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:33,056 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:33,297 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:33,961 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:34,203 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:34,453 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:35,122 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:35,383 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:35,690 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:35,932 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:36,203 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:36,509 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:36,816 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:37,834 - freqtrade.freqtradebot - INFO - Buy order forcesold for Trade(id=9, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:19:22).
+2024-10-18 13:26:37,835 - freqtrade.freqtradebot - INFO - Buy order fully cancelled. Removing Trade(id=9, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:19:22) from database.
+2024-10-18 13:26:37,850 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:37,850 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 9, 'type': entry_cancel, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Binance', 'pair': 'USDC/USDT', 'leverage': 1.0, 'direction': 'Long', 'limit': 1.0002, 'order_type': 'limit', 'stake_amount': 98924.3433754389, 'open_rate': 1.0002, 'stake_currency': 'USDT', 'base_currency': 'USDC', 'quote_currency': 'USDT', 'fiat_currency': 'USD', 'amount': 0.0, 'open_date': datetime.datetime(2024, 10, 18, 13, 19, 22, 206407), 'current_rate': 1.0002, 'reason': 'forcesold, fully cancelled', 'sub_trade': False}
+2024-10-18 13:26:37,852 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:37,862 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:38,095 - freqtrade.freqtradebot - INFO - Long signal found: about create a new trade for BTC/USDT with stake_amount: 16487.39056257315 ...
+2024-10-18 13:26:38,351 - freqtrade.freqtradebot - INFO - Order dry_run_buy_BTC/USDT_1729257998.096415 was created for BTC/USDT and status is open.
+2024-10-18 13:26:38,368 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:38,369 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 9, 'type': entry, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Binance', 'pair': 'BTC/USDT', 'leverage': 1.0, 'direction': 'Long', 'limit': 67793.72, 'open_rate': 67793.72, 'order_type': 'limit', 'stake_amount': 16487.39056257315, 'stake_currency': 'USDT', 'base_currency': 'BTC', 'quote_currency': 'USDT', 'fiat_currency': 'USD', 'amount': 0.24319, 'open_date': datetime.datetime(2024, 10, 18, 13, 26, 38, 351529, tzinfo=datetime.timezone.utc), 'current_rate': 67793.72, 'sub_trade': False}
+2024-10-18 13:26:38,376 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:38,660 - freqtrade.freqtradebot - INFO - Long signal found: about create a new trade for ETH/USDT with stake_amount: 16487.390562573153 ...
+2024-10-18 13:26:38,961 - freqtrade.freqtradebot - INFO - Order dry_run_buy_ETH/USDT_1729257998.660638 was created for ETH/USDT and status is open.
+2024-10-18 13:26:38,981 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:38,981 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 10, 'type': entry, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Binance', 'pair': 'ETH/USDT', 'leverage': 1.0, 'direction': 'Long', 'limit': 2617.89, 'open_rate': 2617.89, 'order_type': 'limit', 'stake_amount': 16487.390562573153, 'stake_currency': 'USDT', 'base_currency': 'ETH', 'quote_currency': 'USDT', 'fiat_currency': 'USD', 'amount': 6.2979, 'open_date': datetime.datetime(2024, 10, 18, 13, 26, 38, 962532, tzinfo=datetime.timezone.utc), 'current_rate': 2617.89, 'sub_trade': False}
+2024-10-18 13:26:38,988 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:39,236 - freqtrade.freqtradebot - INFO - Long signal found: about create a new trade for USDC/USDT with stake_amount: 16487.39056257315 ...
+2024-10-18 13:26:39,474 - freqtrade.freqtradebot - INFO - Order dry_run_buy_USDC/USDT_1729257999.236327 was created for USDC/USDT and status is open.
+2024-10-18 13:26:39,488 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:39,488 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 11, 'type': entry, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Binance', 'pair': 'USDC/USDT', 'leverage': 1.0, 'direction': 'Long', 'limit': 1.0002, 'open_rate': 1.0002, 'order_type': 'limit', 'stake_amount': 16487.39056257315, 'stake_currency': 'USDT', 'base_currency': 'USDC', 'quote_currency': 'USDT', 'fiat_currency': 'USD', 'amount': 16484.0, 'open_date': datetime.datetime(2024, 10, 18, 13, 26, 39, 474994, tzinfo=datetime.timezone.utc), 'current_rate': 1.0002, 'sub_trade': False}
+2024-10-18 13:26:39,497 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:39,761 - freqtrade.freqtradebot - INFO - Long signal found: about create a new trade for FDUSD/USDT with stake_amount: 16487.39056257315 ...
+2024-10-18 13:26:40,132 - freqtrade.freqtradebot - INFO - Order dry_run_buy_FDUSD/USDT_1729257999.761647 was created for FDUSD/USDT and status is open.
+2024-10-18 13:26:40,147 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:40,147 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 12, 'type': entry, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Binance', 'pair': 'FDUSD/USDT', 'leverage': 1.0, 'direction': 'Long', 'limit': 0.9991, 'open_rate': 0.9991, 'order_type': 'limit', 'stake_amount': 16487.39056257315, 'stake_currency': 'USDT', 'base_currency': 'FDUSD', 'quote_currency': 'USDT', 'fiat_currency': 'USD', 'amount': 16502.0, 'open_date': datetime.datetime(2024, 10, 18, 13, 26, 40, 133090, tzinfo=datetime.timezone.utc), 'current_rate': 0.9991, 'sub_trade': False}
+2024-10-18 13:26:40,154 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:40,414 - freqtrade.freqtradebot - INFO - Long signal found: about create a new trade for DOGE/USDT with stake_amount: 16487.39056257315 ...
+2024-10-18 13:26:40,648 - freqtrade.freqtradebot - INFO - Order dry_run_buy_DOGE/USDT_1729258000.414638 was created for DOGE/USDT and status is open.
+2024-10-18 13:26:40,662 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:40,662 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 13, 'type': entry, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Binance', 'pair': 'DOGE/USDT', 'leverage': 1.0, 'direction': 'Long', 'limit': 0.13328, 'open_rate': 0.13328, 'order_type': 'limit', 'stake_amount': 16487.39056257315, 'stake_currency': 'USDT', 'base_currency': 'DOGE', 'quote_currency': 'USDT', 'fiat_currency': 'USD', 'amount': 123704.0, 'open_date': datetime.datetime(2024, 10, 18, 13, 26, 40, 649205, tzinfo=datetime.timezone.utc), 'current_rate': 0.13328, 'sub_trade': False}
+2024-10-18 13:26:40,670 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:40,906 - freqtrade.freqtradebot - INFO - Long signal found: about create a new trade for SOL/USDT with stake_amount: 16487.390562573142 ...
+2024-10-18 13:26:41,140 - freqtrade.freqtradebot - INFO - Order dry_run_buy_SOL/USDT_1729258000.907244 was created for SOL/USDT and status is open.
+2024-10-18 13:26:41,153 - freqtrade.wallets - INFO - Wallets synced.
+2024-10-18 13:26:41,154 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 14, 'type': entry, 'buy_tag': '', 'enter_tag': '', 'exchange': 'Binance', 'pair': 'SOL/USDT', 'leverage': 1.0, 'direction': 'Long', 'limit': 152.89, 'open_rate': 152.89, 'order_type': 'limit', 'stake_amount': 16487.390562573142, 'stake_currency': 'USDT', 'base_currency': 'SOL', 'quote_currency': 'USDT', 'fiat_currency': 'USD', 'amount': 107.838, 'open_date': datetime.datetime(2024, 10, 18, 13, 26, 41, 140664, tzinfo=datetime.timezone.utc), 'current_rate': 152.89, 'sub_trade': False}
+2024-10-18 13:26:42,319 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=9, pair=BTC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=67793.72000000, open_since=2024-10-18 13:26:38)
+2024-10-18 13:26:42,567 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=10, pair=ETH/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=2617.89000000, open_since=2024-10-18 13:26:38)
+2024-10-18 13:26:42,852 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=11, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:26:39)
+2024-10-18 13:26:43,098 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=12, pair=FDUSD/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=0.99910000, open_since=2024-10-18 13:26:40)
+2024-10-18 13:26:43,364 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=13, pair=DOGE/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=0.13328000, open_since=2024-10-18 13:26:40)
+2024-10-18 13:26:43,634 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=14, pair=SOL/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=152.89000000, open_since=2024-10-18 13:26:41)
+2024-10-18 13:26:47,361 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=9, pair=BTC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=67793.72000000, open_since=2024-10-18 13:26:38)
+2024-10-18 13:26:47,611 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=10, pair=ETH/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=2617.89000000, open_since=2024-10-18 13:26:38)
+2024-10-18 13:26:47,859 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=11, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:26:39)
+2024-10-18 13:26:48,279 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=12, pair=FDUSD/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=0.99910000, open_since=2024-10-18 13:26:40)
+2024-10-18 13:26:48,690 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=13, pair=DOGE/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=0.13328000, open_since=2024-10-18 13:26:40)
+2024-10-18 13:26:48,996 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=14, pair=SOL/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=152.89000000, open_since=2024-10-18 13:26:41)
+2024-10-18 13:26:52,376 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=9, pair=BTC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=67793.72000000, open_since=2024-10-18 13:26:38)
+2024-10-18 13:26:52,683 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=10, pair=ETH/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=2617.89000000, open_since=2024-10-18 13:26:38)
+2024-10-18 13:26:52,990 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=11, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:26:39)
+2024-10-18 13:26:53,248 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=12, pair=FDUSD/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=0.99910000, open_since=2024-10-18 13:26:40)
+2024-10-18 13:26:53,503 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=13, pair=DOGE/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=0.13328000, open_since=2024-10-18 13:26:40)
+2024-10-18 13:26:53,753 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=14, pair=SOL/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=152.89000000, open_since=2024-10-18 13:26:41)
+2024-10-18 13:26:57,393 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=9, pair=BTC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=67793.72000000, open_since=2024-10-18 13:26:38)
+2024-10-18 13:26:57,700 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=10, pair=ETH/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=2617.89000000, open_since=2024-10-18 13:26:38)
+2024-10-18 13:26:58,008 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=11, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:26:39)
+2024-10-18 13:26:58,258 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=12, pair=FDUSD/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=0.99910000, open_since=2024-10-18 13:26:40)
+2024-10-18 13:26:58,622 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=13, pair=DOGE/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=0.13328000, open_since=2024-10-18 13:26:40)
+2024-10-18 13:26:58,930 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=14, pair=SOL/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=152.89000000, open_since=2024-10-18 13:26:41)
+2024-10-18 13:27:02,419 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=9, pair=BTC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=67793.72000000, open_since=2024-10-18 13:26:38)
+2024-10-18 13:27:02,674 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=10, pair=ETH/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=2617.89000000, open_since=2024-10-18 13:26:38)
+2024-10-18 13:27:02,927 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=11, pair=USDC/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=1.00020000, open_since=2024-10-18 13:26:39)
+2024-10-18 13:27:03,176 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=12, pair=FDUSD/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=0.99910000, open_since=2024-10-18 13:26:40)
+2024-10-18 13:27:03,538 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=13, pair=DOGE/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=0.13328000, open_since=2024-10-18 13:26:40)
+2024-10-18 13:27:03,845 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=14, pair=SOL/USDT, amount=0.00000000, is_short=False, leverage=1.0, open_rate=152.89000000, open_since=2024-10-18 13:26:41)
+2024-10-18 13:27:05,795 - freqtrade.commands.trade_commands - INFO - worker found ... calling exit
+2024-10-18 13:27:05,795 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'process died'}
+2024-10-18 13:27:05,795 - freqtrade.freqtradebot - INFO - Cleaning up modules ...
+2024-10-18 13:27:05,799 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': "6 open trades active.\n\nHandle these trades manually on Binance, or '/start' the bot again and use '/stopentry' to handle open trades gracefully. \nNote: Trades are simulated (dry run)."}
+2024-10-18 13:27:05,799 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc modules ...
+2024-10-18 13:27:05,800 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.apiserver ...
+2024-10-18 13:27:05,801 - freqtrade.rpc.api_server.webserver - INFO - Stopping API Server
+2024-10-18 13:27:05,841 - uvicorn.error - INFO - Shutting down
+2024-10-18 13:27:05,942 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-10-18 13:27:05,942 - uvicorn.error - INFO - Application shutdown complete.
+2024-10-18 13:27:05,942 - uvicorn.error - INFO - Finished server process [1]
+2024-10-18 13:27:05,942 - freqtrade.rpc.rpc_manager - INFO - Cleaning up rpc.telegram ...
+2024-10-18 13:27:06,021 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-10-18 13:27:06,021 - telegram.ext.Application - INFO - Application.stop() complete
+2024-10-18 13:27:11,880 - freqtrade.exchange.exchange_ws - INFO - Resetting WS connections.
+2024-10-18 13:27:11,880 - freqtrade.exchange.exchange_ws - INFO - SUI/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,880 - freqtrade.exchange.exchange_ws - INFO - BTC/USDT, 1d, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - USDC/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - WLD/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - FDUSD/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - SHIB/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - SOL/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - DOGE/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - ENA/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - ETH/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - TURBO/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - DIA/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - PEPE/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - XRP/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,881 - freqtrade.exchange.exchange_ws - INFO - WIF/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,882 - freqtrade.exchange.exchange_ws - INFO - LUMIA/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,882 - freqtrade.exchange.exchange_ws - INFO - NEIRO/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,882 - freqtrade.exchange.exchange_ws - INFO - FLOKI/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,882 - freqtrade.exchange.exchange_ws - INFO - 1MBABYDOGE/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,882 - freqtrade.exchange.exchange_ws - INFO - BOME/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:11,882 - freqtrade.exchange.exchange_ws - INFO - BTC/USDT, 5m, spot - Task finished - cancelled
+2024-10-18 13:27:12,534 - freqtrade - INFO - SIGINT received, aborting ...

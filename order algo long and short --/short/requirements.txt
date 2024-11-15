@@ -1,0 +1,4 @@
+requests
+python-binance
+watchdog
+python-telegram-bot
