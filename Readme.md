@@ -68,3 +68,6 @@ This system uses advanced trading features including:
 - Long/Short positions
 - Custom order execution
 Test thoroughly in backtest and paper trading before live deployment.
+
+## License
+This project is under MIT license. See the LICENSE file for more details.
